@@ -1,0 +1,18 @@
+@media screen and (max-width: 991px) {
+  .mobile_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerMenu {
+    width: 100%;
+    display: block;
+  }
+  .bars {
+    display: block;
+    margin-top: 15px;
+  }
+  .mainMenu {
+    display: none;
+  }
+}
