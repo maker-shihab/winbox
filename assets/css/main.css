@@ -157,10 +157,16 @@ header {
   top: 7px;
   transform: rotate(-45deg);
 }
-*SECTION HEADING*/ .al_heading {
+/* *SECTION HEADING*/
+.al_heading {
+  padding-top: 30px;
 }
 .al_heading h1 {
   text-align: center;
+  color: #000639;
+  font-weight: 700;
+  font-size: 42px;
+  padding-bottom: 15px;
 }
 .al_heading p {
   text-align: center;
@@ -284,6 +290,7 @@ header {
 
 /*SECTION IMAGE AND ICON*/
 .image_icon_section {
+  margin-bottom: 50px;
 }
 .image_icon_main_area {
 }
@@ -304,13 +311,15 @@ header {
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
-.text_icon_title {
+.text_icon_title ul li img {
+  margin-right: 5px;
 }
 .text_icon_title h1 {
   font-size: 24px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   padding-bottom: 10px;
+  color: #0415aa;
 }
 .text_icon_main_area ul {
   display: flex;
