@@ -14,6 +14,7 @@ $( document ).ready(function() {
   $('.hero_slider_items').owlCarousel({
     loop:true,
     margin:10,
+    dots: false,
     nav:true,
     responsive:{
         0:{

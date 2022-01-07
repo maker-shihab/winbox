@@ -117,7 +117,7 @@ header {
   visibility: hidden;
 }
 .dropDown.active i {
-  transform: rotate(-145px);
+  transform: rotate(-180deg);
 }
 .megaMenu.active {
   opacity: 1;
@@ -300,7 +300,7 @@ header {
 .al_grah_shape {
   position: absolute;
   z-index: -1;
-  top: 10%;
+  top: -5%;
 }
 .al_pie_chart_image img {
   width: 100%;
@@ -548,4 +548,41 @@ footer {
   color: #0415aa;
   font-size: 22px;
   border-bottom: 2px solid #0415aa;
+}
+/* OWL CAROUSEL CSS */
+.hero_slider_items {
+  position: relative;
+}
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
+  /* position: absolute; */
+  width: 100%;
+}
+.hero_slider_items .owl-nav button {
+  position: absolute;
+  background: #ffffff !important;
+  box-shadow: 10px 10px 40px rgba(4, 21, 170, 0.3);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: calc(50% - 15px);
+  opacity: 1;
+}
+.hero_slider_items .owl-nav button:hover,
+.hero_slider_items .owl-nav button:focus {
+  background: #0415aa !important;
+  box-shadow: 10px 10px 40px rgba(4, 21, 170, 0.3) !important;
+  color: #fff !important;
+}
+.hero_slider_items .owl-nav button span {
+  font-size: 30px;
+  font-family: inherit;
+  line-height: 30px;
+}
+.hero_slider_items .owl-nav .owl-prev {
+  left: -15px;
+}
+.hero_slider_items .owl-nav .owl-next {
+  right: -15px;
 }
