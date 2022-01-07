@@ -4,7 +4,12 @@ $( document ).ready(function() {
   });
 
 
-
+  $(".dropDown").click(
+    function () {
+      $(this).toggleClass('active');
+      $('.megaMenu').toggleClass('active');
+      return false;
+    });
 
   $('.hero_slider_items').owlCarousel({
     loop:true,

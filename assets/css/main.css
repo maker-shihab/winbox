@@ -95,6 +95,68 @@ header {
   padding: 10px;
   color: #000639;
 }
+.dropdown_item {
+  position: relative;
+}
+.megaMenu {
+  position: absolute;
+  right: calc(50% - 300px);
+  margin: 0 auto;
+  top: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  width: 550px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  border-radius: 15px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.dropDown.active i {
+  transform: rotate(-145px);
+}
+.megaMenu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.megaMenu::before {
+  z-index: -1;
+  position: absolute;
+  top: -40px;
+  background: #fff;
+  content: "";
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 40px;
+  width: 40px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+}
+.megaMenu li {
+  text-align: inherit;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.megaMenu li a {
+  text-align: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-weight: 700;
+  color: #0415aa;
+  font-size: 18px;
+}
+.megaMenu li img {
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
 /* MAIN MENU BUTTONS */
 .heroArea {
   padding: 50px 0;
@@ -108,6 +170,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 50px;
+}
+.hero_text {
+  flex: 0 0 55%;
+}
+.hero_shape img {
+  height: 100%;
+  width: 100%;
 }
 .heroTitle {
   font-size: 44px;
