@@ -28,4 +28,9 @@ $( document ).ready(function() {
         }
     }
 })
+// FOOTER MENU JAVASCRIPT
+  $('.footer_weiget_title').click(function(){
+    $(this).toggleClass('active');
+    $('.footer_weiget_item').toggleClass('active');
+  });
 });
