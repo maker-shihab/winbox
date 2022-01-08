@@ -7,6 +7,25 @@
     max-width: 1400px;
   }
 }
+@media screen and (max-width: 1199px) {
+  .al_category_title h1,
+  .blog_text_title,
+  .al_heading h1,
+  .hero_slider_title {
+    font-size: 32px;
+  }
+  .heroTitle {
+    font-size: 38px;
+  }
+  .blog_btn,
+  .al_heading h3.subTitle {
+    font-size: 18px;
+  }
+  .footer_weiget_title,
+  .al_category_card h1 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 991px) {
   .mobile_bar {
     display: flex;
@@ -34,17 +53,25 @@
   .blog_text_title {
     font-size: 28px;
   }
-  .heroTitle,
-  .hero_slider_title,
-  .al_heading h1,
-  .al_category_title h1 {
-    font-size: 36px;
-  }
   .text_icon_main_area {
     flex-direction: column;
   }
   .footer_weiget_title {
     font-size: 22px;
+  }
+  .heroTitle {
+    font-size: 32px;
+  }
+  .hero_slider_title {
+    width: 75%;
+  }
+  .al_grah_bar_content h1 {
+    font-size: 25px;
+  }
+  .text_icon_title {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -74,10 +101,6 @@
     row-gap: 20px;
     text-align: center;
   }
-  .text_icon_title {
-    max-width: 450px;
-    margin: 0 auto;
-  }
   .blog_btn {
     font-size: 18px;
   }
@@ -99,38 +122,27 @@
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.2);
   }
-  .footer_weiget_title span {
+  .accordion {
     display: block;
   }
-  .footer_weiget_item {
-    position: absolute;
-    height: 200px;
-    width: 100%;
-    background: #000;
-    background: rgba(255, 255, 255, 0.2);
-    left: 0;
-    top: 45px;
-    opacity: 0;
-    visibility: hidden;
+  .footer_weiget {
+    display: none;
   }
-  .footer_weiget_item.active {
-    opacity: 1;
-    visibility: visible;
-  }
-  .footer_weiget_title.active {
-    height: 300px;
-    align-items: flex-start;
-  }
-  .footer_weiget_title i {
-    transition: 0.3s all ease;
-  }
-  .footer_weiget_title.active i {
-    transform: rotate(180deg);
+  .footer_weiget_item li a {
+    color: #fff;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 576px) {
   .al_category_main_card {
     grid-template-columns: 1fr;
     row-gap: 30px;
+  }
+  .al_category_title h1,
+  .blog_text_title,
+  .al_heading h1,
+  .hero_slider_title,
+  .hero_slider_title {
+    font-size: 28px;
   }
 }

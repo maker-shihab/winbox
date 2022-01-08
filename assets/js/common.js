@@ -18,10 +18,10 @@ $( document ).ready(function() {
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
-            items:3
+            items:4
         },
         1000:{
             items:5
@@ -29,10 +29,6 @@ $( document ).ready(function() {
     }
 })
 // FOOTER MENU JAVASCRIPT
-  $('.footer_weiget_title').click(function(){
-    $(this).toggleClass('active');
-    $('.footer_weiget_item').toggleClass('active');
-  });
   // MAGNIFIC POPUP
   $(document).ready(function() {
     $('.videoPlayBtn').magnificPopup({
@@ -42,3 +38,4 @@ $( document ).ready(function() {
   
   
 });
+
