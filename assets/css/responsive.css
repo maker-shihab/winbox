@@ -35,6 +35,29 @@
   .headerMenu {
     width: 100%;
     display: block;
+    position: relative;
+    z-index: 99;
+  }
+  .mainMenu_bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    top: 111px;
+    background: #fff;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    height: 0%;
+    transition: 0.4s all ease-in-out;
+  }
+  .mainMenu_bar.active {
+    opacity: 1;
+    visibility: visible;
+    height: 360px;
+  }
+  .mainMenu {
+    flex-direction: column;
   }
   .bars {
     display: block;
@@ -43,16 +66,6 @@
   .mainMenu_bar {
     display: flex;
     flex-direction: column;
-  }
-  .mainMenu {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.4s all ease-in-out;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 150px;
   }
   .mainMenu.active {
     flex-direction: column;
@@ -190,6 +203,15 @@
   }
   .single_blog_text {
     padding-left: 40px;
+  }
+  .megaMenu {
+    right: calc(50% - 130px);
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 260px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    border-radius: 15px;
   }
 }
 @media screen and (max-width: 450px) {

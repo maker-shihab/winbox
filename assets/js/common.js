@@ -1,10 +1,9 @@
 $( document ).ready(function() {
   $('.bars').click(function(){
     $(this).toggleClass('active');
-    $('.mainMenu').toggleClass('active');
+    $('.mainMenu_bar').toggleClass('active');
       return false;
   });
-
 
   $(".dropDown").click(
     function () {
@@ -37,7 +36,5 @@ $( document ).ready(function() {
       type: 'iframe'
     });
   });
-  
-  
 });
 
