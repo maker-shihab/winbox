@@ -218,4 +218,7 @@
   .videoPlayBtn {
     top: calc(50% - 48px);
   }
+  body {
+    overflow-x: hidden;
+  }
 }
