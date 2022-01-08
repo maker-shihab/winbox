@@ -416,8 +416,8 @@ header {
   height: 70px;
   border-radius: 10px;
   position: absolute;
-  left: calc(50% - 25px);
-  top: calc(50% - 90px);
+  left: calc(50% - 45px);
+  top: calc(50% - 95px);
   background: #000427d0;
   text-align: center;
   line-height: 70px;
@@ -630,6 +630,7 @@ footer {
 /* FOOTE ACCRODION */
 .accordion {
   display: none;
+  padding-top: 30px;
 }
 .accordion-button:not(.collapsed),
 .accordion-item,

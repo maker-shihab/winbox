@@ -1,6 +1,8 @@
 $( document ).ready(function() {
   $('.bars').click(function(){
     $(this).toggleClass('active');
+    $('.mainMenu').toggleClass('active');
+      return false;
   });
 
 
@@ -8,7 +10,7 @@ $( document ).ready(function() {
     function () {
       $(this).toggleClass('active');
       $('.megaMenu').toggleClass('active');
-      return false;
+      
     });
 
   $('.hero_slider_items').owlCarousel({
