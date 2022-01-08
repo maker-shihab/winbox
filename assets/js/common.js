@@ -33,4 +33,12 @@ $( document ).ready(function() {
     $(this).toggleClass('active');
     $('.footer_weiget_item').toggleClass('active');
   });
+  // MAGNIFIC POPUP
+  $(document).ready(function() {
+    $('.videoPlayBtn').magnificPopup({
+      type: 'iframe'
+    });
+  });
+  
+  
 });

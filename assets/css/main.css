@@ -409,6 +409,19 @@ header {
 .al_video_image {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+.videoPlayBtn {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  background: #fff;
+  text-align: center;
+  line-height: 48px;
+  font-size: 24px;
 }
 .al_video_image img {
   width: 100%;
